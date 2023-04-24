@@ -8,6 +8,30 @@ let shop = document.getElementById("shop");
 
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
+let shopItemsData = [
+  {
+    id: "box1",
+    name: "Box 1",
+    price: 45,
+    desc: "Milk carton party pack box",
+    img: "../Images/box1.jpg",
+  },
+  {
+    id: "box2",
+    name: "Box 2",
+    price: 45,
+    desc: "Rounded party pack box",
+    img: "../Images/box2.jpg",
+  },
+  {
+    id: "box3",
+    name: "Box 3",
+    price: 45,
+    desc: "Heart party pack box",
+    img: "../Images/box3.jpg",
+  },
+]
+
 /**
  * ! Generates the shop with product cards composed of
  * ! images, title, price, buttons, description
@@ -20,22 +44,21 @@ let generateShop = () => {
       let search = basket.find((y) => y.id === id) || [];
       return `
     <div id=product-id-${id} class="item">
-      <img width="220" src=${img} alt="">
+      <img src=${img} alt="">
       <div class="details">
         <h3>${name}</h3>
         <p>${desc}</p>
         <div class="price-quantity">
-          <h2>$ ${price} </h2>
+          <h2>R ${price} </h2>
           <div class="buttons">
             <i onclick="decrement(${id})" class="bi bi-dash-lg"></i>
-            <div id=${id} class="quantity">${
-        search.item === undefined ? 0 : search.item
-      }</div>
+            <div id=${id} class="quantity">${search.item === undefined ? 0 : search.item
+        }</div>
             <i onclick="increment(${id})" class="bi bi-plus-lg"></i>
           </div>
         </div>
       </div>
-  </div>
+  </div> 
     `;
     })
     .join(""));
@@ -105,3 +128,9 @@ let calculation = () => {
 };
 
 calculation();
+
+
+/**
+ * cart script
+ */
+
