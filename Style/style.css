@@ -57,7 +57,7 @@ a {
 
 
 /**
-  * ! Navbar STyles are here
+  * ! Navbar Styles are here
   **/
 
 .navbar {
@@ -68,6 +68,13 @@ a {
   color: white;
   padding: 25px 60px;
   margin-bottom: 30px;
+}
+
+.logo{
+  color: hsl(240, 22%, 95%);
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
 }
 
 .cart {
@@ -84,8 +91,8 @@ a {
   top: -15px;
   right: -10px;
   font-size: 16px;
-  background-color: red;
-  color: white;
+  background-color: rgb(248, 182, 154);
+  color: rgb(1, 1, 1);
   padding: 3px;
   border-radius: 3px;
 }
@@ -189,11 +196,24 @@ a {
 }
 
 .checkout {
-  background-color: green;
+  background-color: rgb(34, 116, 149);
+  opacity: 0.8;
+  transition: 0.3s;
 }
 
+.checkout :hover {
+  opacity: 1
+}
+
+
 .removeAll {
-  background-color: red;
+  background-color: rgb(177, 5, 5);
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.removeAll :hover {
+  opacity: 1
 }
 
 .bi-x-lg {
@@ -242,3 +262,4 @@ a {
   border-radius: 4px;
   padding: 3px 6px;
 }
+

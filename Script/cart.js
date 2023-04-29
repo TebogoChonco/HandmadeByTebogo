@@ -42,7 +42,7 @@ let generateCartItems = () => {
           <div class="title-price-x">
             <h4 class="title-price">
               <p>${name}</p>
-              <p class="cart-item-price">$ ${price}</p>
+              <p class="cart-item-price">R ${price}</p>
             </h4>
             <i onclick="removeItem(${id})" class="bi bi-x-lg"></i>
           </div>
@@ -55,7 +55,7 @@ let generateCartItems = () => {
             </div>
           </div>
 
-          <h3>$ ${item * price}</h3>
+          <h3>R ${item * price}</h3>
         
         </div>
       </div>
@@ -66,7 +66,7 @@ let generateCartItems = () => {
     ShoppingCart.innerHTML = "";
     label.innerHTML = `
     <h2>Cart is Empty</h2>
-    <a href="index.html">
+    <a href="../HTML/store.html">
       <button class="HomeBtn">Back to Home</button>
     </a>
     `;
@@ -159,7 +159,7 @@ let TotalAmount = () => {
       .reduce((x, y) => x + y, 0);
 
     return (label.innerHTML = `
-    <h2>Total Bill : $ ${amount}</h2>
+    <h2>Total Amount Due : R ${amount}</h2>
     <button class="checkout">Checkout</button>
     <button onclick="clearCart()" class="removeAll">Clear Cart</button>
     `);
