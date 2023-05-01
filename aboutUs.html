@@ -13,32 +13,48 @@
 <body>
     <div class="navbar">
         <a class="logo">
-            <h2>Party Supplies Store</h2>
+          <h2>Party Supplies Store</h2>
         </a>
-
+        <button class="hamburger" id="hamburger">
+          <i class="bi bi-list"></i>
+        </button>
+      <ul class="nav-ul" id="nav-ul">
+        <li>
         <a href="store.html">
-            <h2>Home</h2>
+          <p>Home</p>
         </a>
-
+      </li>
+      <li>
         <a href="aboutUs.html">
-            <h2>About Us</h2>
+          <p>About Us</p>
         </a>
-
+      </li>
+      <li>
         <a href="gallery.html">
-            <h2>Gallery</h2>
+          <p>Gallery</p>
         </a>
-
+      </li>
+      <li>
         <a href="contactUs.html">
-            <h2>Contact Us</h2>
+          <p>Contact Us</p>
         </a>
-
+      </li>
+      <li>
         <a href="cart.html">
-            <div class="cart">
-                <i class="bi bi-cart2"></i>
-                <div id="cartAmount" class="cartAmount">0</div>
-            </div>
+          <div class="cart">
+            <i class="bi bi-cart-fill"></i>
+            <div id="cartAmount" class="cartAmount">0</div>
+          </div>
         </a>
-    </div>
+      </li>
+      </div>
+    
+      <div class="welcome">
+        <p class="welcome-text">
+            Welcome to Tebogo's Party Supplies Online Store
+        </p>
+      </ul>
+      </div>
 
     <div class="card-wrapper">
        <div class="card-heading">
@@ -48,11 +64,13 @@
        </div>
         <div class="card-container">
             <div class="card">
-                <div class="card-body">
+                <div class="ard-title">
                     <p class="card-title" id="heading">
                             ABOUT US
                         </p>
-                    <br>
+                </div>
+                <br>
+                <div class="card-body">
                     <p>
                         We're a small printing shop that was established in 2018.
                         We are highly regarded for our professionalism, service and integrity,
@@ -65,22 +83,25 @@
             </div>
             <br>
             <div class="card">
-                <div class="card-body">
+                <div class="card-title">
                     <p class="card-title" id="heading">
                         VISION & MISSION
                     </p>
+                </div>
                     <br>
-                    <h3>VISION</h3>
+                <div class="card-body">
+                    <h3 class="card-title">VISION</h3>
                     To become an innovative leader in the integrated marketing and media industry!
-
-                    <h3>MISSION</h3>
+                    <br>
+                    <h3 class="card-title">MISSION</h3>
                     To provide affordable services and products yet not compromising on the best service
                     in the field, providing you, our important customer with high quality products.
-
                 </div>
             </div>
         </div>
-    </div>    
+    </div>   
+    
+<script src="Script/navbar.js"></script>
 </body>
 
 </html>
