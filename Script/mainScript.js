@@ -96,7 +96,7 @@ let shopItemsData = [
   {
     id: "tray3",
     name: "Tray 3",
-    price: 55,
+    price: 48,
     desc: "printed 3D tray box box",
     img: "../Images/tray3.jpg",
   },
