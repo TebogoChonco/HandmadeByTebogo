@@ -193,14 +193,15 @@ a {
   margin-bottom: 20px;
 }
 
-.HomeBtn,
+.homeBtn,
 .checkout,
 .removeAll {
-  background-color: #212529;
+  background-color: #154b6d;
+  font-size: 20px;
   color: white;
   border: none;
   padding: 6px;
-  border-radius: 3px;
+  border-radius: 6px;
   cursor: pointer;
   margin-top: 10px;
 }
@@ -247,7 +248,7 @@ a {
   **/
 
 .cart-item {
-  border: 2px solid #0ffbf7;
+  border: 2px solid #3c6a7d;
   border-radius: 5px;
   display: flex;
 }
@@ -312,7 +313,6 @@ a {
  margin: 0 auto;
  display: flex;
  flex-direction: row;
- 
  flex-wrap: wrap;
 }
 
@@ -349,8 +349,70 @@ a {
 
 iframe {
   width:100%;
-  height:2 vh;
+  height:30vh;
+}
+
+.adress {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 40px;
+  font-size: 30px;
+}
+.left{
+  width: 40%;
+  font-size: 30px;
+}
+
+.left i{
+  color: #0c70c2;
   
+}
+
+.right {
+  width: 40%;
+  justify-content: center;
+}
+
+.right p {
+  font-size: 20px;
+}
+
+.right h2 {
+  color:#5094bf;
+  
+}
+
+#field {
+  height: 3rem;
+  font-size: 30px;
+}
+
+.form-label{
+  color:#5094bf;
+  font-size: 30px;
+}
+
+#message {
+  height: 10rem;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn {
+  font-size: 30px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #154b6d;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-control {
+  width: 100%;
+  border-radius: 8px;
+  padding: 8px;
 }
 
 @media (max-width: 1000px) {
@@ -386,6 +448,30 @@ iframe {
   width: 100%;
 }
 
+.adress{
+  justify-content: center;
+  text-align: center;
+}
+
+.left {
+  padding-top: 20px;
+  width: 90%;
+  font-size: 20px;
+}
+
+.right {
+  width: 90%;
+}
+
+.right p {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.right h2 {
+ font-size: 40px;
+  margin-top: 15px;
+}
 
 }
 @media (max-width: 500px) {
