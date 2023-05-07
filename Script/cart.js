@@ -1,3 +1,4 @@
+/**Code to call the selectors */
 let ShoppingCart = document.getElementById("shopping-cart");
 let label = document.getElementById("label");
 
@@ -21,8 +22,7 @@ let calculation = () => {
 calculation();
 
 /**
- * ! Generates the Cart Page with product cards composed of
- * ! images, title, price, buttons, & Total price
+ * ! Generates the Cart Page with product cards composed of images, title, price, buttons, & Total price
  * ? When basket is blank -> show's Cart is Empty
  */
 
@@ -35,7 +35,7 @@ let generateCartItems = () => {
         let { img, price, name } = search;
         return `
       <div class="cart-item">
-        <img width="100" src=${img} alt="" />
+        <img width="100px" src=${img} />
 
         <div class="details">
         
@@ -44,9 +44,9 @@ let generateCartItems = () => {
               <p>${name}</p>
               <p class="cart-item-price">R ${price}</p>
             </h4>
-            <i onclick="removeItem(${id})" class="bi bi-x-lg"></i>
+            <i onclick="removeItem(${id})" class="bi bi-trash3-fill"></i>
+           
           </div>
-
           <div class="cart-buttons">
             <div class="buttons">
               <i onclick="decrement(${id})" class="bi bi-dash-lg"></i>

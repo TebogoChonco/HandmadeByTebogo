@@ -49,13 +49,6 @@
       </li>
   </div>
 
-  <!-- <div class="welcome">
-    <p class="welcome-text">
-        Welcome to Tebogo's Party Supplies Online Store
-    </p>
-  </ul> -->
-  </div>
-
   <div class="contact" id="contact">
 
     <div class="map">
@@ -88,27 +81,42 @@
         If you have any queries, please complete the following form
         and click on the SUBMIT button to email it for our attention.
       </p>
-      <div class="name">
-        <label for="yourName" class="form-label">Your Name</label>
-        <input type="text" class="form-control" id="field"  required>
-      </div>
-      <div class="email">
-        <label for="email" class="form-label">Your Email</label>
-        <input type="email" class="form-control" id="field" placeholder="example@gmail.com" required>
-      </div>
-      <div class="message">
-        <label for="message" class="form-label">Message</label>
-        <textarea class="form-control" id="message" ></textarea>
-      </div>
-      <div class="submit">
-        <button type="submit" class="btn">Send Mail</button>
-      </div>
-      </form>
+
+      <form>
+        <div class="name">
+          <label for="yourName" class="form-label">Your Name</label>
+          <input type="text" class="form-control" id="field" required>
+        </div>
+        <div class="email">
+          <label for="email" class="form-label">Your Email</label>
+          <input type="email" class="form-control" id="field" placeholder="example@gmail.com" required>
+        </div>
+        <div class="message">
+          <label for="message" class="form-label" id="message">Message</label>
+          <textarea class="form-control" id="message" required></textarea>
+        </div>
+
+        <button data-modal-target="#modal" class="btn">Send Mail</button>
+        <div class="modal" id="modal">
+          <div class="modal-header">
+            <div class="title">Mail sent</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+
+          <div class="modal-body">
+            <i class="bi bi-send-check-fill"></i>
+
+            <p>Your message has been sent and a member of our team will respond to you very soon.</p>
+          </div>
+        </div>
+        <div id="overlay"></div>
     </div>
+    </form>
   </div>
 
   <script src="Script/navbar.js"></script>
-  <script src="Script/cart.js"></script> 
+  <script src="Script/cart.js"></script>
+  <script src="Script/modal.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,4 @@
+// All the items in the shop can be updated here
 let shopItemsData = [
   {
     id: "candle1",
@@ -35,12 +36,12 @@ let shopItemsData = [
     img: "../Images/box2.jpg",
   },
   {
-  id: "box3",
-  name: "Box 3",
-  price: 45,
-  desc: "Heart party pack box",
-  img: "../Images/box3.jpg",
- },
+    id: "box3",
+    name: "Box 3",
+    price: 45,
+    desc: "Heart party pack box",
+    img: "../Images/box3.jpg",
+  },
   {
     id: "pringles1",
     name: "Pringles 1",
