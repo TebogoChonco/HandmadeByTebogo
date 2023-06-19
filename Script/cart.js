@@ -41,7 +41,7 @@ let generateCartItems = () => {
         
           <div class="title-price-x">
             <h4 class="title-price">
-              <p>${name}</p>
+              <p class="name">${name}</p>
               <p class="cart-item-price">R ${price}</p>
             </h4>
             <i onclick="removeItem(${id})" class="bi bi-trash3-fill"></i>
@@ -160,11 +160,17 @@ let TotalAmount = () => {
 
     return (label.innerHTML = `
     <h2>Total Amount Due : R ${amount}</h2>
-    <button class="checkout">Checkout</button>
+    <button class="checkout" onclick="checkout()">Checkout</button>
+    
     <button onclick="clearCart()" class="removeAll">Clear Cart</button>
     `);
   } else return;
 };
+
+ function checkout () {
+  alert("Thank you for your purchase!");
+};
+
 
 TotalAmount();
 
