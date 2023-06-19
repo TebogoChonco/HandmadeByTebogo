@@ -41,7 +41,7 @@ let generateCartItems = () => {
         
           <div class="title-price-x">
             <h4 class="title-price">
-              <p class="name">${name}</p>
+              <p>${name}</p>
               <p class="cart-item-price">R ${price}</p>
             </h4>
             <i onclick="removeItem(${id})" class="bi bi-trash3-fill"></i>
